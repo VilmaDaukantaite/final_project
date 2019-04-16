@@ -1,7 +1,7 @@
 [Your Final Project Title]
-[Your Name]
+#### Vilma Daukantaite
 
-[Your Cohort Campus & Time]
+##### Data Analytics Bootcamp / Ironhack Barcelona Campus / April 2019
 
 ### Overview
 Include the following points in your overview:
