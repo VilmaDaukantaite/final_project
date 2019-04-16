@@ -20,18 +20,32 @@ Frame your hypothesis with statistical/data languages (i.e. define Null and Alte
 
 ### Data Preparation
 Overview:
-* What is your dataset about?
-* Where/how did you obtain your dataset?
-It can be either a public dataset or collected with API/web scraping.
-Provide a link if possible.
+* My dataset is about the 
+
+* Origin of the dataset is:
+https://www.lendingclub.com/info/download-data.action
+I am using an aggregated dataset for the same data from:
+https://www.kaggle.com/wordsforthewise/lending-club
+
 * General description of the dataset such as the size, complexity, data types, etc.
+Data set is 618MB, 151 columns and over 2M entries. 
 
 ### Data Ingestion & Database
+Origin of the dataset is:
+https://www.lendingclub.com/info/download-data.action
+I am using an aggregated dataset for the same data from:
+https://www.kaggle.com/wordsforthewise/lending-club
+For now using read_csv to load and explore data before migrating data to a database
+
 * If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* If you obtain the data via API/web scraping, provide the scripts.
 * Provide a schema of your tables.
 
 ### Data Wrangling and Cleaning
+
+* Checking the shape, head, isna, dtypes
+* Dropping columns that have majority of data missing
+* Fixing dtypes where necessairy
+
 Your full process of data wrangling and cleaning.
 * Document your workflow and thinking process.
 
