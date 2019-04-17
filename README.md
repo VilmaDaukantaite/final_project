@@ -1,8 +1,8 @@
 ## Loan grade clasification and expected default rate prediction using ML
-### Based on LendingClub transactions
+#### Based on LendingClub transactions
 
 #### Vilma Daukantaite
-##### Data Analytics Bootcamp / Ironhack Barcelona Campus / April 2019
+###### Data Analytics Bootcamp / Ironhack Barcelona Campus / April 2019
 
 ### Overview
 
@@ -11,14 +11,18 @@
 * Building ML model for classifying borrowers/loans 
 * Building ML model for estimating expected default rate
 
-* I am sure these techniques are already widely used in order to speed up transactions and automatize certain processes. 
+I am sure these techniques are already widely used in order to speed up transactions and automatize certain processes. 
 
 * Hypothesis testing:
+
 H0 - there was no difference between default rate during 2007-2011 and 2013-2018
 H1 - there was a significant difference between default rate during 2007-2011 and 2013-2018
 
-* I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
-* How will you test your hypothesis? Two sample t test for difference of means
+I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
+
+* How will you test your hypothesis? 
+
+Two sample t test for difference of means
 
 * How will you test your success?
 
@@ -34,7 +38,7 @@ https://www.lendingclub.com/info/download-data.action
 * I am using an aggregated dataset for the same data from:
 https://www.kaggle.com/wordsforthewise/lending-club
 
-* Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to NaN values some numeric and datetime columns have been imported as objects and will need to be changed. For machine learning some of the categorical columns (that I believe are significant) might need to be one-hot encoded.
+Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to NaN values some numeric and datetime columns have been imported as objects and will need to be changed. For machine learning some of the categorical columns (that I believe are significant) might need to be one-hot encoded.
 
 ### Data Ingestion & Database
 
