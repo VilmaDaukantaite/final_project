@@ -16,6 +16,7 @@ I am sure these techniques are already widely used in order to speed up transact
 * Hypothesis testing:
 
 H0 - there was no difference between default rate during 2007-2011 and 2013-2018
+
 H1 - there was a significant difference between default rate during 2007-2011 and 2013-2018
 
 I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
