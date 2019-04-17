@@ -1,18 +1,25 @@
-[Your Final Project Title]
-#### Vilma Daukantaite
+## Loan grade clasification and expected default rate prediction using ML
+### Based on LendingClub transactions
 
+#### Vilma Daukantaite
 ##### Data Analytics Bootcamp / Ironhack Barcelona Campus / April 2019
 
 ### Overview
-Include the following points in your overview:
 
-* What data/business/research/personal question you would like to answer?
-Make sure the question description is human-friendly because you will have non-tech audience to see your final project presentation.
-* Did you understand the context for the question and the scientific or business application?
-* What is the hypothesis you would like to test in order to answer your question?
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
-* Did you consider whether the question could be answered with the available data?
-* How will you test your hypothesis?
+* What factors influence your grade as a borrower?
+* Was there a significant difference in default on loans during 2007-2011 as compared to now?
+* Building ML model for classifying borrowers/loans 
+* Building ML model for estimating expected default rate
+
+* I am sure these techniques are already widely used in order to speed up transactions and automatize certain processes. 
+
+* Hypothesis testing:
+H0 - there was no difference between default rate during 2007-2011 and 2013-2018
+H1 - there was a significant difference between default rate during 2007-2011 and 2013-2018
+
+* I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
+* How will you test your hypothesis? Two sample t test for difference of means
+
 * How will you test your success?
 
 
@@ -20,21 +27,17 @@ Frame your hypothesis with statistical/data languages (i.e. define Null and Alte
 
 ### Data Preparation
 Overview:
-* My dataset is about the 
+* My dataset contains information on loans funded via lending club, each row represents one row with 151 features describing the borrower.
 
 * Origin of the dataset is:
 https://www.lendingclub.com/info/download-data.action
-I am using an aggregated dataset for the same data from:
+* I am using an aggregated dataset for the same data from:
 https://www.kaggle.com/wordsforthewise/lending-club
 
-* General description of the dataset such as the size, complexity, data types, etc.
-Data set is 618MB, 151 columns and over 2M entries. 
+* Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to NaN values some numeric and datetime columns have been imported as objects and will need to be changed. For machine learning some of the categorical columns (that I believe are significant) might need to be one-hot encoded.
 
 ### Data Ingestion & Database
-Origin of the dataset is:
-https://www.lendingclub.com/info/download-data.action
-I am using an aggregated dataset for the same data from:
-https://www.kaggle.com/wordsforthewise/lending-club
+
 For now using read_csv to load and explore data before migrating data to a database
 
 * If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
