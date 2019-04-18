@@ -11,6 +11,7 @@
 * Was there a significant difference in default on loans during 2007-2011 as compared to now?
 * Building ML model for classifying borrowers/loans 
 * Building ML model for estimating expected default rate
+* Possibly painting US household financial profile? (debt/savings balance) But would need more data.
 
 These techniques are already widely used in order to speed up transactions and automatize certain processes. 
 
