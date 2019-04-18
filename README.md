@@ -8,7 +8,7 @@
 
 * What factors influence your grade as a borrower in the US?
 * What are the most common purpouse for the loan?
-* Was there a significant difference in default on loans during 2007-2011 as compared to now?
+* Was there a significant difference in default on loans during 2007-2011 as compared to now? (not sure as in the dictionary of column descriptions default on loans rate column was listed, but dictionary does not match the data file)
 * Building ML model for classifying borrowers/loans 
 * Building ML model for estimating expected default rate
 * Possibly painting US household financial profile? (debt/savings balance) But would need more data.
