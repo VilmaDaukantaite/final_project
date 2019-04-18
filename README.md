@@ -6,12 +6,13 @@
 
 ### Overview
 
-* What factors influence your grade as a borrower?
+* What factors influence your grade as a borrower in the US?
+* What are the most common purpouse for the loan?
 * Was there a significant difference in default on loans during 2007-2011 as compared to now?
 * Building ML model for classifying borrowers/loans 
 * Building ML model for estimating expected default rate
 
-I am sure these techniques are already widely used in order to speed up transactions and automatize certain processes. 
+These techniques are already widely used in order to speed up transactions and automatize certain processes. 
 
 * Hypothesis testing:
 
@@ -21,9 +22,7 @@ H1 - there was a significant difference between default rate during 2007-2011 an
 
 I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
 
-* How will you test your hypothesis? 
-
-Two sample t test for difference of means
+Two sample t test for difference of means will be used for the hypothesis testing
 
 * How will you test your success?
 
@@ -31,6 +30,7 @@ Two sample t test for difference of means
 
 
 ### Data Preparation
+
 Overview:
 * My dataset contains information on loans funded via lending club, each row represents one row with 151 features describing the borrower.
 
