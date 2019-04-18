@@ -6,14 +6,25 @@
 
 ### Overview
 
-* What factors influence your grade as a borrower in the US?
-* What are the most common purpouse for the loan?
-* Was there a significant difference in default on loans during 2007-2011 as compared to now? (not sure as in the dictionary of column descriptions default on loans rate column was listed, but dictionary does not match the data file)
-* Building ML model for classifying borrowers/loans 
-* Building ML model for estimating expected default rate
-* Possibly painting US household financial profile? (debt/savings balance) But would need more data.
+I was curious to see the differences between house ownership rate in countries and underlying reasons for it. Which led me to explore Household financial structure (savings/debt). And I ended up with curiosity on what elements influence your grade as a borrower of consumption loans. Due to limitations of getting data i chose to explore LendingClub transactions dataset that is openly available.
 
-These techniques are already widely used in order to speed up transactions and automatize certain processes. 
+My questions are:
+
+* What factors influence your grade as a borrower in the US?
+* What are the most common purpose for the loan?
+* Building ML model for classifying borrowers/loans (Decision Tree)
+
+Success evaluated using Decision Tree Score value. 
+
+Classification techniques are already widely used in order to speed up transactions and automatize certain processes. 
+
+
+###### Extra topics
+
+* Was there a significant difference in default on loans during 2007-2011 as compared to now? 
+* Building ML model for estimating expected default rate
+* Painting US household financial profile? (debt/savings balance) 
+
 
 * Hypothesis testing:
 
@@ -23,10 +34,8 @@ H1 - there was a significant difference between default rate during 2007-2011 an
 
 I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
 
-Two sample t test for difference of means will be used for the hypothesis testing
-
-* How will you test your success?
-
+Two sample t test for difference of means will be used for the hypothesis testing. 
+Success is evaluated by comparing alfa and p value received by the test
 
 
 
