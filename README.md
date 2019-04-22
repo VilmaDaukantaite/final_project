@@ -14,7 +14,7 @@ My questions are:
 * What are the most common purpose for the loan?
 * Building ML model for classifying borrowers/loans (Decision Tree)
 
-Success evaluated using Decision Tree Score value. 
+Success evaluated using Decision Tree Score value and confusion matrix.
 
 Classification techniques are already widely used in order to speed up transactions and automatize certain processes. 
 
