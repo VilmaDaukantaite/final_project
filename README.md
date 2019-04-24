@@ -6,22 +6,34 @@
 
 ### Overview
 
-I was curious to see the differences between house ownership rate in countries and underlying reasons for it. Which led me to explore Household financial structure (savings/debt). And I ended up with curiosity on what elements influence your grade as a borrower of consumption loans. Due to limitations of getting data i chose to explore LendingClub transactions dataset that is openly available.
+It all started with a difference of opinions between my partner and myself when it comes to renting or owning an apartment. So I was curious to see the differences between house ownership rate in Spain and Lithuania and underlying reasons for it. 
 
-My questions are:
+  |
+  V
 
-* What factors influence your grade as a borrower in the US?
+Which led me to explore Household financial structure (savings/debt). And I ended up with curiosity on what elements influence your grade as a borrower. 
+
+  |
+  V
+
+
+Due to limitations of getting data for either of the two countries as well as wanting to try out machine learning models I chose to explore LendingClub transactions dataset that is openly available. 
+
+
+My questions were:
+
+* What factors influence the grade as a borrower in the US?
 * What are the most common purpose for the loan?
-* Building ML model for classifying borrowers/loans (Decision Tree)
+* Building ML model for classifying borrowers/loans (Decision Tree, Random Forest)
 
-Success evaluated using Decision Tree Score value and confusion matrix.
+Success evaluated using Score value and confusion matrix.
 
 Classification techniques are already widely used in order to speed up transactions and automatize certain processes. 
 
 
 ###### Extra topics
 
-* Painting US household financial profile? (debt/savings balance) 
+* Painting US household financial profile (debt/savings balance) 
 
 
 I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
@@ -40,6 +52,7 @@ https://www.kaggle.com/wordsforthewise/lending-club
 
 Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to NaN values some numeric and datetime columns have been imported as objects and will need to be changed. For machine learning some of the categorical columns (that I believe are significant) might need to be one-hot encoded.
 
+
 ### Data Ingestion & Database
 
 
@@ -51,24 +64,36 @@ Schema of db tables:
 
 ### Data Wrangling and Cleaning
 
-* Checking the shape, head, isna, dtypes
-
-* Dropping columns that have majority of data missing
-* Fixing dtypes where necesairy
-
-Process of data wrangling and cleaning.
-
 ![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Data_cleaning.png)
 
+* Checking the shape, head, isna, dtypes
+* Fixing dtypes where necesairy
+* Dropping columns related to post loan measurements 
+
+
+
 ### Data Analysis
+
+Comparing two periods 2007-2011 and 2016-2018
+
+* Checked the structure of loans by purpose
+* Checked loan distribution by grade
+* Checked loan distribution by term length
+* Loan distribution by property ownership
+* Loan distribution by employment length
+* Relationship between fico score (credit rating) and interest rate
+* Evolution of interest rate as well as mean asking loan amount
+* Relationship between loan grade and interest rate/fico rate/term
+
+For ML model removed all features that had low variability, were related to post loan activities, were categorical variables with too many categories.
 
 
 ### Model Training and Evaluation
 
-I have chose to use Decision tree classifier to predict the grade of the loan. 
-To choose the optimal hyper parameters I ran crossvaligdation iterating over the depth of the tree coming up with depth of 10 for 2007-2011 and 5 for 2016-2018.
+First I have chosen to use Decision tree classifier to predict the grade of the loan. 
+To choose the optimal hyper parameters I ran cross-validation, iterating over the depth of the tree coming up with depth of 10 for 2007-2011 and 5 for 2016-2018 as the line at which tree accuracy stoped improving.
 
-After printing and checking the decision tree image I realized that interest_rate parameter should be dropped before running the model as it is highly dependent on the Grade of Loan that gets assigned. 
+After printing and checking the decision tree image I realized that interest_rate parameter should be dropped before running the model as after some research I found out is highly dependent on the Grade of Loan that gets assigned. 
 
 Therefore I ran the models again without this parameter and accuracy significantly dropped.
 
