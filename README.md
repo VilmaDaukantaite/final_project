@@ -9,11 +9,13 @@
 It all started with a difference of opinions between my partner and myself when it comes to renting or owning an apartment. So I was curious to see the differences between house ownership rate in Spain and Lithuania and underlying reasons for it. 
 
   |
+
   V
 
 Which led me to explore Household financial structure (savings/debt). And I ended up with curiosity on what elements influence your grade as a borrower. 
 
   |
+
   V
 
 
@@ -99,8 +101,20 @@ Therefore I ran the models again without this parameter and accuracy significant
 
 
 ### Conclusion
-* Summarize your data analysis result.
-* State your conclusion of your hypothesis testing.
-* Interpret your findings in terms of the human-understandable question you try to answer.
 
-### What are the next steps?
+* The LoanClub business is booming as Americans have high personal debts and need debt consolidation
+* Highest influence on your Loan grade as well as interest rate among others comes from:
+1) Credit Score
+2) Term for which you want the loan
+3) Annual income
+4) Debt to income ratio
+5) Amount of credit inquiries in the last 12 months
+
+* ML models can seem deceivingly accurate so always checking needs to be done from all angles
+
+### What are the next steps? 
+
+As further steps I would like to:
+* improve current models, or find more accurate models for prediction
+* obtain information for European market to be able to compare the profiles
+
