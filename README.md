@@ -47,7 +47,7 @@ I have used read_csv to load and explore data in my local repository. I could no
 
 Schema of db tables:
 
-![alt text](/Users/vilma/Desktop/Screen Shot 2019-04-24 at 20.58.15.png)
+![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/DB_schema.png)
 
 ### Data Wrangling and Cleaning
 
