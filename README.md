@@ -56,8 +56,9 @@ Schema of db tables:
 * Dropping columns that have majority of data missing
 * Fixing dtypes where necesairy
 
-Your full process of data wrangling and cleaning.
-* Document your workflow and thinking process.
+Process of data wrangling and cleaning.
+
+![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Data_cleaning.png)
 
 ### Data Analysis
 
