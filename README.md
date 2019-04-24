@@ -21,21 +21,10 @@ Classification techniques are already widely used in order to speed up transacti
 
 ###### Extra topics
 
-* Was there a significant difference in default on loans during 2007-2011 as compared to now? 
-* Building ML model for estimating expected default rate
 * Painting US household financial profile? (debt/savings balance) 
 
 
-* Hypothesis testing:
-
-H0 - there was no difference between default rate during 2007-2011 and 2013-2018
-
-H1 - there was a significant difference between default rate during 2007-2011 and 2013-2018
-
 I believe there is enough of data available. However limitation might come from the fact that there is less data points for the earlier periods as compared to 2018
-
-Two sample t test for difference of means will be used for the hypothesis testing. 
-Success is evaluated by comparing alfa and p value received by the test
 
 
 
@@ -53,31 +42,33 @@ Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to N
 
 ### Data Ingestion & Database
 
-For now using read_csv to load and explore data before migrating data to a database
 
-* If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
+I have used read_csv to load and explore data in my local repository. I could not upload my datasets to GitHub as there is a limit for file size. I have uploaded a sample data base (1000 entry sample to demonstrate how it could be modeled)
+
 * Provide a schema of your tables.
 
 ### Data Wrangling and Cleaning
 
 * Checking the shape, head, isna, dtypes
+
 * Dropping columns that have majority of data missing
-* Fixing dtypes where necessairy
+* Fixing dtypes where necesairy
 
 Your full process of data wrangling and cleaning.
 * Document your workflow and thinking process.
 
 ### Data Analysis
-* Overview the general steps you will go through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Print charts to demonstrate the effect of your work. Charts make your presentation look good too.
-* If you use ML in your final project, also describe your feature selection process.
+
 
 ### Model Training and Evaluation
-* Train your ML model, produce results, and evaluate.
-* This is an iterative process. Try your best to improve your model performance by:
-  * Try different models and select one that is the simplest yet produce the best result.
-  * Try advanced techniques and see if they improve the result.
+
+I have chose to use Decision tree classifier to predict the grade of the loan. 
+To choose the optimal hyper parameters I ran crossvaligdation iterating over the depth of the tree coming up with depth of 10 for 2007-2011 and 5 for 2016-2018.
+
+After printing and checking the decision tree image I realized that interest_rate parameter should be dropped before running the model as it is highly dependent on the Grade of Loan that gets assigned. 
+
+Therefore I ran the models again without this parameter and accuracy significantly dropped.
+
 
 ### Conclusion
 * Summarize your data analysis result.
