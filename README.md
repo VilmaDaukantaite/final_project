@@ -45,7 +45,9 @@ Data set is 618MB (compressed size), 151 columns and over 2.2M entries. Due to N
 
 I have used read_csv to load and explore data in my local repository. I could not upload my datasets to GitHub as there is a limit for file size. I have uploaded a sample data base (1000 entry sample to demonstrate how it could be modeled)
 
-* Provide a schema of your tables.
+Schema of db tables:
+
+![alt text](/Users/vilma/Desktop/Screen Shot 2019-04-24 at 20.58.15.png)
 
 ### Data Wrangling and Cleaning
 
