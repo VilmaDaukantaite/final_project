@@ -6,20 +6,7 @@
 
 ### Overview
 
-It all started with a difference of opinions between my partner and myself when it comes to renting or owning an apartment. So I was curious to see the differences between house ownership rate in Spain and Lithuania and underlying reasons for it. 
-
-  |
-
-  V
-
-Which led me to explore Household financial structure (savings/debt). And I ended up with curiosity on what elements influence your grade as a borrower. 
-
-  |
-
-  V
-
-
-Due to limitations of getting data for either of the two countries as well as wanting to try out machine learning models I chose to explore LendingClub transactions dataset that is openly available. 
+![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Images/Idea_flow.png) 
 
 
 My questions were:
@@ -62,11 +49,11 @@ I have used read_csv to load and explore data in my local repository. I could no
 
 Schema of db tables:
 
-![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/DB_schema.png)
+![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Images/DB_schema.png)
 
 ### Data Wrangling and Cleaning
 
-![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Data_cleaning.png)
+![alt text](https://github.com/VilmaDaukantaite/final_project/blob/master/Images/Data_cleaning.png)
 
 * Checking the shape, head, isna, dtypes
 * Fixing dtypes where necesairy
