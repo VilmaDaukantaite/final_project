@@ -86,6 +86,8 @@ After printing and checking the decision tree image I realized that interest_rat
 
 Therefore I ran the models again without this parameter and accuracy significantly dropped.
 
+I also tried Random forest and KNN models but their results were coming back even worse and would have needed a lot more hyper parameter and feature tweaking in order for them to be reliable.
+
 
 ### Conclusion
 
